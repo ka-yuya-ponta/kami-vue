@@ -15,7 +15,7 @@
 <script>
 import firebase from "~/plugins/firebase";
 export default {
-  middleware: "auth",
+   middleware: "auth",
   data() {
     return {
       posts: [],
