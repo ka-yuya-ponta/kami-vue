@@ -63,6 +63,9 @@ export default {
 </script>
 
 <style scoped>
+.body {
+  margin: 0;
+}
 .all {
   background-color: black;
   width: 100%;

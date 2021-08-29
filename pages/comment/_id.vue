@@ -13,7 +13,7 @@
           <p>コメント</p>
         </div>
         <div class="message" v-for="comment in comments" :key="comment.id">
-          <div class="flex">
+          <div class="content">
             <p class="name">{{ comment.user_name }}</p>
           </div>
           <div>
@@ -105,6 +105,9 @@ export default {
 </script>
 
 <style scoped>
+.body {
+  margin: 0;
+}
 .left {
   width: 22%;
   height: 100vh;
@@ -115,7 +118,6 @@ export default {
 }
 .flex {
   display: flex;
-    
     background-color: black;
   width: 100%;
   height: 100vh;
