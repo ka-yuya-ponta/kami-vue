@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <Header />
+  <div class="all">
+     <AuthHeader />
     <div class="card">
       <p>ログイン</p>
       <div class="form">
@@ -59,6 +59,17 @@ export default {
 </script>
 
 <style scoped>
+.body {
+  margin :0;
+
+}
+.all {
+  background-color: black;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
 .right {
   align-items: center;
 }

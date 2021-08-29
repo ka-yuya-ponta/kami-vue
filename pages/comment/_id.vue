@@ -115,6 +115,13 @@ export default {
 }
 .flex {
   display: flex;
+    
+    background-color: black;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  color: white;
 }
 .title {
   border-bottom: 1px solid white;

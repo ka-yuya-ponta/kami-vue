@@ -1,13 +1,13 @@
 <template>
   <div>
     <div class="left-padding">
-      <span class="logo"  >a</span>
+      <span class="logo"  >share</span>
       <div class="flex icon-field" @click="$router.push('/')">
-        <span class="icon" >a</span>
+        <span class="material-icons" >home</span>
         <p>ホーム</p>
       </div>
       <div class="flex icon-field" @click="logout">
-        <span class="icon">a</span>
+        <span class="material-icons">logout</span>
         <p>ログアウト</p>
       </div>
     </div>
@@ -26,6 +26,14 @@ export default {
     return {
       content: "",
     };
+  },
+    head: {
+    link: [
+      {
+        rel: "stylesheet",
+        href: "https://fonts.googleapis.com/icon?family=Material+Icons",
+      },
+    ],
   },
   methods: {
     logout() {
@@ -61,6 +69,9 @@ export default {
 
 
 <style scoped>
+div {
+  color: white;
+}
 .left-padding {
   margin: 20px;
 }

@@ -5,19 +5,19 @@
         <div class="flex">
           <p class="name">{{ post.user_name }}</p>
           <span
-           
+           class="material-icons"
             @click="like(post, index)"
-          >a</span>
+          >favorite</span>
           <p class="number">
             {{ post.like_count }}
           </p>
           <span
-            class="icon"
+            class="material-icons"
            
             @click="deletePost(post.id, index)"
-          >a</span>
+          >highlight_off</span>
           <span
-            class="icon detail"
+            class="material-icons"
             
             @click="
               $router.push({
@@ -26,7 +26,7 @@
               })
             "
             v-if="$route.name === 'index'"
-          >a</span>
+          >reply</span>
         </div>
         <p class="text">{{ post.content }}</p>
       </div>
@@ -39,6 +39,14 @@ export default {
   props: {
     posts: Array,
     uid: String,
+  },
+    head: {
+    link: [
+      {
+        rel: "stylesheet",
+        href: "https://fonts.googleapis.com/icon?family=Material+Icons",
+      },
+    ],
   },
   methods: {
     async like(post, index) {
@@ -74,6 +82,7 @@ export default {
 </script>
 
 <style scoped>
+
 .flex {
   display: flex;
   align-items: center;

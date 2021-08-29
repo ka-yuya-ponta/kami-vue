@@ -11,6 +11,9 @@
 </template>
 
 <style scoped>
+div {
+  color: white;
+}
 .right {
   align-items: center;
 }
